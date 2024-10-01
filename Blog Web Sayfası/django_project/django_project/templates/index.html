@@ -1,0 +1,303 @@
+
+{% extends 'anasayfa.html' %}
+{% load static %}
+{% block govde %}
+    
+      
+    
+      <!-- Carousel Start -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'slider-1.jpg' %}" class="d-block w-100" alt="#">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'slider-2.jpg' %}" class="d-block w-100" alt="#">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'slider-3.jpg' %}" class="d-block w-100" alt="#">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel End -->
+      <!-- İçerik Başlangıç -->
+      <section>
+        <<div class="container">
+          <div class="container">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="card">
+                          <img src="{% static 'yemek-foto1.jpg' %}" class="card-img-top img-fluid mb-3" alt="Macaroni">
+      
+                          <div class="card-body">
+                             <a href="#" class="card-baslik"><h5 class="card-title">Best Brown Butter Chocolate Chip Cookies</h5></a>
+                              <p class="card-text">These cookies are soft, chewy, and loaded with chocolate chips. The brown butter adds a rich and nutty flavor that makes them irresistible.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="card">
+                          <img src="{% static 'yemek-foto2.jpg' %}" class="card-img img-fluid" alt="Macaroni">
+      
+                          <div class="card-body">
+                             <a href="#" class="card-baslik"><h5 class="card-title">Tini’s Mac and Cheese</h5></a>
+                              <p class="card-text">This mac and cheese is creamy, cheesy, and baked to perfection. It's a family favorite that you can easily customize with your favorite toppings.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+      </div>
+          
+          <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card mt-3">
+                            <img src="{% static 'yemek-foto3.jpg' %}" class="card-img img-fluid" alt="Macaroni">
+        
+                            <div class="card-body">
+                               <a href="#" class="card-baslik"><h5 class="card-title">Best Brown Butter Chocolate Chip Cookies</h5></a>
+                                <p class="card-text">These cookies are soft, chewy, and loaded with chocolate chips. The brown butter adds a rich and nutty flavor that makes them irresistible.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card mt-3">
+                            <img src="{% static 'yemek-foto4.jpg' %}" class="card-img img-fluid" alt="Macaroni">
+        
+                            <div class="card-body">
+                                <a href="#" class="card-baslik"><h5 class="card-title">Tini’s Mac and Cheese</h5></a>
+                                <p class="card-text">This mac and cheese is creamy, cheesy, and baked to perfection. It's a family favorite that you can easily customize with your favorite toppings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+     </section>
+
+     <main class="container">
+        <div class="row">
+            <section class="col-sm-8">
+                <article class="row">
+                    <div class="col-sm-4 mb-3 mt-4"><img src="{% static 'yan-foto1.jpg' %}" alt=""></div>
+                    <div class="col-sm-8 mt-4 metin">
+                        <h2>1-Bowl Pumpkin Coffee Cake (Vegan + GF)</h2>
+                        <p>
+                          <b> Recipe  </b><br>
+                          • 3/4 cup cane sugar* ((ensure organic if vegan))
+                          • 1/2 cup softened vegan butter
+                          • 1 cup pumpkin purée
+                          • 2 tsp vanilla extract
+                          • 1 ½ cups MB 1:1 GF Blend
+                          • 3/4 cup almond flour ((we like Wellbee’s))
+                          • 2 tsp baking powder                          
+                          <a href="#">… daha fazlası</a>
+                          </p>
+                                          
+                    </div>
+                </article>
+                <article class="row">
+                    <div class="col-sm-4 mb-3 mt-4"><img src="{% static 'yan-foto2.jpg' %}" alt=""></div>
+                    <div class="col-sm-8 mt-4 metin">
+                        <h2>2-Crusty Gluten-Free Artisan Bread</h2>
+                        <p>
+                          <b> Recipe  </b><br>
+                          • 1 ⅓ cup warm water
+                          • 2 Tbsp cane sugar ((or sub maple syrup))
+                          • 2 ¼ tsp active dry yeast ((1 packet yields 2 ¼ tsp or 7 g))
+                          • 1 ½ Tbsp psyllium husk powder*
+                          • 1 cup brown rice flour
+                          • 3/4 cup potato starch ((NOT potato flour))
+                          • 1/2 cup tapioca flour ((also called tapioca starch))
+                          • 1 tsp sea salt</p>                    
+                    </div>
+                </article>
+                <article class="row">
+                    <div class="col-sm-4 mb-3 mt-4"><img src="{% static 'yan-foto3.jpg' %}" alt=""></div>
+                    <div class="col-sm-8 mt-4 metin">
+                        <h2>3-Creamy Vegan Green Chile Casserole</h2>
+                        <p>
+                          <b> Recipe  </b><br>
+                          • 1 (16-oz.) package super firm tofu, drained and grated ((or sub two 15-oz. cans black beans, drained and rinsed))
+                          • 2 Tbsp olive or avocado oil
+                          • 1/2 medium yellow onion, finely chopped ((1/2 onion yields ~1 ½ cups or 160 g))
+                          • 1 small red bell pepper, finely chopped ((1 pepper yields ~1 cup or 150 g))
+                          • 1 (4-oz.) can diced green chiles (hot or medium), drained ((or sub 1/4 cup fresh roasted hatch chiles, finely chopped))
+                          <a href="#">… daha fazlası</a>
+                          </p>
+                                            
+                    </div>
+                </article>
+                <article class="row">
+                    <div class="col-sm-4 mb-3 mt-4"><img src="{% static 'yan-foto4.jpg' %}" alt=""></div>
+                    <div class="col-sm-8 mt-4 metin">
+                        <h2>4-Creamy Carrot Ginger Soup (Instant Pot Friendly!)</h2>
+                        <p>
+                          <b> Recipe  </b><br>
+                            • 1 Tbsp olive, coconut, or avocado oil ((if oil-free, sub water and add more as needed))
+                            • 2 pounds carrots, scrubbed clean, peeling optional, cut into 1/2-inch pieces
+                            • 1 medium-large white or yellow onion, diced ((1 onion yields ~2 cups or 275 g))
+                            • 1 Tbsp minced fresh ginger
+                            <a href="#"> … daha fazlası</a>
+
+                        </p>
+                                            
+                    </div>
+                </article>
+            </section>
+            <!-- <aside class="col-sm-4">
+            </aside> -->
+            
+        </div>
+     </main>
+     <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="{% static 'card-foto1.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chai-Spiced Oatmeal Cookies (Flourless!)</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">New Recipes</a>
+              </div>
+            </div>            
+          </div>
+          <div class="col-md-3 mt-3">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'card-foto2.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Creamy Mushroom Chicken (Samoan-Inspired)</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-success">Hearty Meals</a>
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-3 mb-3 mt-3">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'card-foto3.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">1-Bowl Vegan Sugar Cookies</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Desserts</a>
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-3 mt-3">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'card-foto4.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curried Potato & Lentil Soup (1 Pot!)</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-warning">What's In Season</a>
+              </div>
+            </div> 
+          </div>
+        </div>
+     </div> 
+    
+
+
+
+
+
+
+
+
+    <a id="top"></a>
+
+    <!-- Sayfanın içeriği burada -->
+
+    
+    <button onclick="topFunction()" id="myBtn" title="Yukarı Çık">Yukarı Çık</button>
+
+      <!-- İçerik Bitiş -->
+
+
+
+      <!-- --------------Footer Başlangıç--------------- -->
+      <footer>
+        <p>Copyright © 2023 iamafoodblog, all rights reserved. | About | FAQ | New Here? | <a href="iletisim.html">Contact</a> | Privacy
+        </p><hr>
+        <p>A Raptive Partner Site</p>
+      </footer>
+
+      <!-- --------------Footer Bitiş------------------  -->
+  
+{%endblock%}      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script>
+        
+        window.onscroll = function() {
+          var nav = document.querySelector("nav");
+          var scroll = window.pageYOffset;
+          // kaydırma mesafesine göre arka plan rengini değiştirir
+          if (scroll < 100) {
+            nav.style.backgroundColor = "lightbrown";
+          } else if (scroll <200) {
+            nav.style.backgroundColor = "pink";
+          } else if (scroll < 300) {
+            nav.style.backgroundColor = "red";
+          } else {
+            nav.style.backgroundColor = "purple";
+          }
+        };
+      </script>
+      <script>
+        
+        let mybutton = document.getElementById("myBtn");
+        
+        //  aşağı kaydırıldğında butonu göster
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // butona tıkladığında sayfanın başına dön
+        function topFunction() {          
+          document.documentElement.scrollTop = 0; 
+        }
+        </script>
+
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });</script>

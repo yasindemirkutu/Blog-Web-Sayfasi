@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  {% load static %}
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i am food blog</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
+</head>
+<body>
+
+
+
+ <!-- Header Başlangıç  -->
+ <a href="../"><small>no food no life</small></a>
+ <a href="../"><h1><b>i am a food blog</b></h1></a> <hr class="hr1">
+ <!-- Header Bitiş -->
+ 
+ <!-- Navbar Başlangıç -->
+ <nav class="navbar navbar-expand-lg text-center ">
+     <div class="container-fluid">          
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="../">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-secondary" href="#">Chicken</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-secondary" href="#">Pasta/Noodles</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-secondary" href="#">Air Fryer</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-secondary" href="#">Breakfast/Brunch</a>
+           </li>
+           <li class="nav-item text-secondary">
+             <a class="nav-link text-secondary" href="#">Contact</a>
+           </li>
+
+
+           {% if user.is_authenticated %}
+            <span class="navbar-text me-4">
+              <a href="#"> Hoşgeldin, {{user.username}}</a>
+            </span>
+            <span class="navbar-text me-4 ">
+              <a href="../logout">Çıkış Yap</a>
+            </span>
+          {% else %}
+            <span class="navbar-text me-4 buttons">
+              <a href="../login" type="button" class="btn btn-primary">Giriş Yap</a>
+            </span>
+            <span class="navbar-text me-4 buttons">
+              <a href="../register" type="button" class="btn btn-success">Kayıt ol</a>
+            </span>
+          {% endif %}
+
+
+       </div>
+     </div>
+   </nav> <hr>
+ <!-- Navbar Bitiş -->
+
+
+    {% comment %} {% if user.is_authenticated %}
+    <span class="navbar-text me-4">
+      <a href="#"> Hoşgeldin, {{user.username}}</a>
+    </span>
+    <span class="navbar-text me-4">
+      <a href="../logout">Çıkış Yap</a>
+    </span>
+  {% else %}
+    <span class="navbar-text me-4">
+      <a href="../login">Giriş Yap</a>
+    </span>
+    <span class="navbar-text me-4">
+      <a href="../register">Kayıt Ol</a>
+    </span>
+  {% endif %} {% endcomment %}
+
+    {%block govde %}    
+    {% endblock%}
+    {%block govde2 %}    
+    {% endblock%}
+    {%block govde3 %}    
+    {% endblock%}
+    {%block govde4 %}    
+    {% endblock%}
+    {%block govde5 %}    
+    {% endblock%}
+    {%block govde6 %}    
+    {% endblock%}
+    {%block govde7 %}    
+    {% endblock%}
+    {%block govde8 %}    
+    {% endblock%}
+    {%block govde9 %}    
+    {% endblock%}
+    {% block baslik2 %}
+    {% endblock %}
+
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,47 @@
+{% extends 'anasayfa.html' %}
+{% load static %}
+{%block govde3 %}
+<form class="row" method="post" action="">
+  {% csrf_token %}
+     <div style="margin:20px">
+          <div class="col-md-6">
+  <div class ="row">
+    <div class="col-md-6">
+      <img src="{{ uye.profilresmi }}" height="200px">
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <a href = "{{uye.cv}}" target="_blank">
+        <img src="{% static 'cv-icon.jpg' %}" height="100px">
+      </a>
+    </div>
+  </div>
+
+
+
+  <label for="adi" class="form-label">Adı</label>
+  <input type="text" class="form-control" id="adi" value="{{uye.ad}}"  readonly>
+  </div>
+  <div class="col-md-6">
+  <label for="soyadi" class="form-label">Soyadı</label>
+  <input type="text" class="form-control" id="soyadi" value="{{uye.soyad}}" readonly>
+  </div>
+  <div class="col-md-6">
+  <label for="kullaniciAdi" class="form-label">Kullanıcı Adı</label>
+  <input type="text" class="form-control" id="kullaniciAdi" value="{{uye.kullaniciAdi}}" readonly>
+  </div>
+  <div class="col-md-6">
+    <label for="uyeno" class="form-label">Üye No</label>
+    <input type="number" class="form-control" id="uyeno" value="{{uye.uyeno}}" readonly>
+    </div>
+  <div class="col-md-6">
+    <label for="cinsiyet" class="form-label">Cinsiyet</label>
+    <input type="text" class="form-control" id="cinsiyet" value="{{uye.cinsiyet}}" readonly>
+    </div>
+
+  <div class="col-12">
+  <button type="submit" class="btn btn-primary">KAYDET</button>
+  </div>
+     </div>
+ 
+  </form>
+{% endblock%}

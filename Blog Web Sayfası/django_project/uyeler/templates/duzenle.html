@@ -1,0 +1,41 @@
+{% extends 'anasayfa.html' %}
+
+{%block govde4 %}
+<form class="row" method="post" action="../duzenle/{{uye.id}}" enctype="multipart/form-data">
+  {% csrf_token %}
+     <div style="margin:20px">
+          <div class="col-md-6">
+  <div class ="col-md-12">
+      <img src="{{uye.profilresmi}}" height = "200px">
+  </div>
+  <div class="col-12">
+    <label for="formFile" class ="form-label">Yeni Profil Resmi: </label>
+    <input class="form-control" type="file" id="formFile" name="profil">
+  </div>
+  <label for="adi" class="form-label">Adı</label>
+  <input type="text" class="form-control" name="adi" id="adi" value="{{uye.ad}}">
+  </div>
+  <div class="col-md-6">
+  <label for="soyadi" class="form-label">Soyadı</label>
+  <input type="text" class="form-control"name="soyadi" id="soyadi" value="{{uye.soyad}}">
+  </div>
+  <div class="col-md-6">
+  <label for="kullaniciAdi" class="form-label">Kullanıcı Adı</label>
+  <input type="text" class="form-control"name="kullaniciAdi" id="kullaniciAdi" value="{{uye.kullaniciAdi}}">
+  </div>
+  <div class="col-md-6">
+    <label for="uyeno" class="form-label">Üye No</label>
+    <input type="number" class="form-control" name="uyeno" id="uyeno" value="{{uye.uyeno}}">
+    </div>
+  <div class="col-md-6">
+    <label for="cinsiyet" class="form-label">Cinsiyet</label>
+    <input type="text" class="form-control"name="cinsiyet" id="cinsiyet" value="{{uye.cinsiyet}}">
+    </div>
+
+  <div class="col-12">
+  <button type="submit" class="btn btn-primary">KAYDET</button>
+  </div>
+     </div>
+ 
+  </form>
+{% endblock%}
